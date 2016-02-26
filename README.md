@@ -19,5 +19,5 @@ docker run -d \
 ## Extra bits
 [Docker Hub page](https://hub.docker.com/r/agsphoenix/sheepit-docker/)
 
-[SheepIt client GitHub repo](https://github.com/laurent-clouet/sheepit-client)
+[SheepIt client GitHub repo](https://github.com/laurent-clouet/sheepit-client)  
 [SheepIt site](https://www.sheepit-renderfarm.com/)
