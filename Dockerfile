@@ -21,4 +21,3 @@ ENV user_password ""
 ENV cpu "1"
 
 CMD java -jar /sheep/sheepit.jar -ui text -login $user_name -password $user_password -cores $cpu -cache-dir /sheep/cache
-
