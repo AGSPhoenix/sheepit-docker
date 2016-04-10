@@ -12,9 +12,10 @@ docker run -d \
  --name "sheep_it" \
  -e user_name=XXXXXX \
  -e user_password=XXXXX \
- -e cpu=1 \
  agsphoenix/sheepit-docker:latest
 ```
+
+You can also specify the `cpu` variable to override autodetection; like `-e cpu=4`.
 
 ## Extra bits
 [Docker Hub page](https://hub.docker.com/r/agsphoenix/sheepit-docker/)
