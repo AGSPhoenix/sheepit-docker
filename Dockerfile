@@ -7,7 +7,7 @@ RUN  apt-get update -y \
   && apt-get install -y --no-install-recommends \
    openjdk-7-jre-headless \
    libxxf86vm1 \
-   wget \
+   curl \
 #Already pulled in by the JRE on Debian, but not on Ubuntu.
    libxi6
 
