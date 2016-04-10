@@ -18,7 +18,7 @@ docker run -d \
 You can also specify the `cpu` variable to override autodetection; like `-e cpu=4`.
 
 ## Extra bits
-[Docker Hub page](https://hub.docker.com/r/agsphoenix/sheepit-docker/)
+[Docker Hub page](https://hub.docker.com/r/agsphoenix/sheepit-docker/)  
 [GitHub page](https://github.com/AGSPhoenix/sheepit-docker)
 
 [SheepIt client GitHub repo](https://github.com/laurent-clouet/sheepit-client)  
