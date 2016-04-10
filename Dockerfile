@@ -6,9 +6,9 @@ MAINTAINER AGSPhoenix
 RUN  apt-get update -y \
   && apt-get install -y --no-install-recommends \
    openjdk-7-jre-headless \
+   curl \
+#Blender dependencies
    libxxf86vm1 \
-   wget \
-#Already pulled in by the JRE on Debian, but not on Ubuntu.
    libxi6
 
 RUN mkdir -p /sheep/cache
@@ -20,6 +20,6 @@ WORKDIR /sheep
 
 ENV user_name ""
 ENV user_password ""
-ENV cpu "1"
+ENV cpu "0"
 
 CMD ./startrenderer.sh
