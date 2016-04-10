@@ -6,9 +6,9 @@ MAINTAINER AGSPhoenix
 RUN  apt-get update -y \
   && apt-get install -y --no-install-recommends \
    openjdk-7-jre-headless \
-   libxxf86vm1 \
    curl \
-#Already pulled in by the JRE on Debian, but not on Ubuntu.
+#Blender dependencies
+   libxxf86vm1 \
    libxi6
 
 RUN mkdir -p /sheep/cache
