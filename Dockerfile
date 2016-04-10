@@ -20,6 +20,6 @@ WORKDIR /sheep
 
 ENV user_name ""
 ENV user_password ""
-ENV cpu "1"
+ENV cpu "0"
 
 CMD ./startrenderer.sh
