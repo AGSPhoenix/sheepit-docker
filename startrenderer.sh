@@ -4,8 +4,7 @@
 echo Checking for client updates...
 latestVersion=`curl --silent --head https://www.sheepit-renderfarm.com/media/applet/client-latest.php|grep -Po 'Content-Disposition:.*filename="?\Ksheepit-client-[\d\.]+'`
 
-if [ ! -e $latestVersion.jar ]
-    then
+if [ ! -e $latestVersion.jar ]; then
     echo Updating client...
     rm -f sheepit-client*.jar
     #Download new client. Can't just use curl -OJ due to malformed Content-Disposition header supplied by client-latest.php
@@ -13,8 +12,8 @@ if [ ! -e $latestVersion.jar ]
 fi
 
 #Autodetect cores
-if [ $cpu -eq 0 ]
-    then
+if [ $cpu -eq 0 ]; then
+    echo No core count specified, autodetected `nproc` cores.
     cpu=`nproc`
 fi
 
