@@ -7,8 +7,8 @@ latestVersion=`curl --silent --head https://www.sheepit-renderfarm.com/media/app
 if [ ! -e $latestVersion.jar ]; then
     echo Updating client...
     rm -f sheepit-client*.jar
-    #Download new client. Can't just use curl -OJ due to malformed Content-Disposition header supplied by client-latest.php
-    curl https://www.sheepit-renderfarm.com/media/applet/client-latest.php > $latestVersion.jar
+    #Download new client.
+    curl https://www.sheepit-renderfarm.com/media/applet/client-latest.php -o $latestVersion.jar
 fi
 
 #Autodetect cores
