@@ -9,7 +9,8 @@ RUN  apt-get update -y \
    curl \
 #Blender dependencies
    libxxf86vm1 \
-   libxi6
+   libxi6 \
+   libxrender1
 
 RUN mkdir -p /sheep/cache
 
