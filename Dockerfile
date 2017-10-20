@@ -1,18 +1,22 @@
-FROM debian:8
+FROM debian:stretch-slim
 
 # File Author / Maintainer
 MAINTAINER AGSPhoenix
 
-RUN  apt-get update -y \
+RUN \
+# MAN folder needed for jre install
+     mkdir -p /usr/share/man/man1 \
+  && mkdir -p /sheep/cache \
+# Install JRE and curl
+  && apt-get update -y \
   && apt-get install -y --no-install-recommends \
-   openjdk-7-jre-headless \
-   curl \
-#Blender dependencies
-   libxxf86vm1 \
-   libxi6 \
-   libxrender1
+	openjdk-8-jre-headless \
+	curl \
 
-RUN mkdir -p /sheep/cache
+#Blender dependencies
+	libxxf86vm1 \
+	libxi6 \
+	libxrender1
 
 ADD startrenderer.sh /sheep/startrenderer.sh
 RUN chmod +x /sheep/startrenderer.sh
