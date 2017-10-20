@@ -1,5 +1,5 @@
-Rebase Debian Stretch-slim and JRE8 
-https://hub.docker.com/r/luxaeterna/sheepit-docker
+Rebase Debian Stretch-slim and JRE8  
+https://hub.docker.com/r/luxaeterna/sheepit-docker  
 Will be removed as soon as the changes are merged into AGSPhoenix's Repo, enjoy with care ;)
 
 
