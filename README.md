@@ -1,3 +1,9 @@
+Rebase Debian Stretch-slim and JRE8 
+https://hub.docker.com/r/luxaeterna/sheepit-docker
+Will be removed as soon as the changes are merged into AGSPhoenix's Repo, enjoy with care ;)
+
+
+
 # A simple dockerized SheepIt render farm client
 
 After being appalled by @dapor2000's monstrous [1.2 GB SheepIt client](https://hub.docker.com/r/dapor/docker_sheepit_renderfarm/) image, I took it upon myself to build a somewhat more lightweight client, and after a few hours, came up with this Debian-based image that is a fifth the size, acts as a drop-in replacement, and auto-updates the client on container startup.
