@@ -8,7 +8,7 @@ RUN \
      mkdir -p /usr/share/man/man1 \
   && mkdir -p /sheep/cache \
 # Install JRE and curl
-  && apt-get update -y \
+  && apt-get update \
   && apt-get install -y --no-install-recommends \
 	openjdk-8-jre-headless \
 	curl \
@@ -16,7 +16,8 @@ RUN \
 #Blender dependencies
 	libxxf86vm1 \
 	libxi6 \
-	libxrender1
+ 	libxrender1 \
+	libxfixes3
 
 ADD startrenderer.sh /sheep/startrenderer.sh
 RUN chmod +x /sheep/startrenderer.sh
