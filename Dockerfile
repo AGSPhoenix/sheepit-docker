@@ -15,6 +15,8 @@ RUN \
 
 #Blender dependencies
 	libxxf86vm1 \
+	libxi6 \
+ 	libxrender1 \
 	libxfixes3
 
 ADD startrenderer.sh /sheep/startrenderer.sh
