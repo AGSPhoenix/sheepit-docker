@@ -12,8 +12,7 @@ RUN \
   && apt-get install -y --no-install-recommends \
 	openjdk-8-jre-headless \
 	curl \
-
-#Blender dependencies
+	#Blender dependencies
 	libsdl1.2debian \
 	libxxf86vm1 \
 	libgl1-mesa-glx \
