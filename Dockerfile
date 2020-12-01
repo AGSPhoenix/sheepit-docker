@@ -1,4 +1,4 @@
-FROM debian:stretch-slim
+FROM debian:buster-slim
 
 # File Author / Maintainer
 MAINTAINER AGSPhoenix
@@ -10,7 +10,7 @@ RUN \
 # Install JRE and curl
   && apt-get update \
   && apt-get install -y --no-install-recommends \
-	openjdk-8-jre-headless \
+	default-jre-headless \
 	curl \
 	#Blender dependencies
 	libsdl1.2debian \
