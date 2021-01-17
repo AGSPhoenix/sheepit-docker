@@ -6,8 +6,8 @@ latestVersion=`curl --silent --head https://www.sheepit-renderfarm.com/media/app
     grep -Po '(?i)content-disposition:.*filename="?(?-i)\Ksheepit-client-[\d\.]+\d'`
 
 if [ -z $latestVersion ]; then
-    #Empty latestVersion hints at a critical error
-    echo Failed parsing version information! Aborting.
+    #Empty latestVersion probably means a server or network issue that would prevent rendering
+    echo Unable to get latest version info; this is likely a network or server issue. Try checking the site and pulling updates, then submit a GitHub issue if that doesn't fix it.
     exit 1
 elif [ ! -e $latestVersion.jar ]; then
     echo Updating client...
