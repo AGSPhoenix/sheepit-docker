@@ -13,7 +13,7 @@ RUN \
 	mkdir -p \
 		/usr/share/man/man1 \
 		/sheep/cache \
-	# Install JRE, curl and blender deps
+	# Upgrade packages, install JRE, curl and blender deps
 	&& apt-get update \
 	&& apt-get upgrade -y \
 	&& apt-get install -y --no-install-recommends \
