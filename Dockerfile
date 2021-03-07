@@ -40,12 +40,15 @@ RUN \
 		/tmp/*
 
 ADD startrenderer.sh /sheep/startrenderer.sh
-RUN chmod +x /sheep/startrenderer.sh
+ADD startrenderer.sh /sheep/initrenderer.sh
+RUN chmod +x /sheep/initrenderer.sh
 
 WORKDIR /sheep
 
-ENV user_name ""
-ENV user_password ""
-ENV cpu "0"
+ENV	user_name=""
+	user_password=""
+	cpu="0"
+	user_UID="1000"
+	user_GID="1000"
 
-CMD ./startrenderer.sh
+CMD ./initrenderer.sh
