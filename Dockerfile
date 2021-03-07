@@ -45,10 +45,10 @@ RUN chmod +x /sheep/initrenderer.sh
 
 WORKDIR /sheep
 
-ENV	user_name=""
-	user_password=""
-	cpu="0"
-	user_UID="1000"
-	user_GID="1000"
+ENV user_name ""
+ENV user_password ""
+ENV cpu "0"
+ENV user_UID "1000"
+ENV user_GID "1000"
 
 CMD ./initrenderer.sh
