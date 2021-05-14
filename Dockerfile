@@ -22,11 +22,10 @@ RUN \
 	libglu1-mesa \
 	libxi6 \
 	libxrender1 \
-	# Blender dependencies of other sheepit containers explained:
-	# needed in the past:
-	#	libsdl1.2debian
-	#	libgl1-mesa-glx
-	# libglu1-mesa deps:
+	# needed for some older versions of Blender:
+	libsdl1.2debian \
+	libgl1-mesa-glx \
+	# libglu1-mesa deps: #not manually specified; Debian maintainers are pretty good about not breaking this
 	#	libxxf86vm1
 	#	libxfixes3
 	#	Dependency chain for both being
