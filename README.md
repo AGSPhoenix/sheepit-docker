@@ -24,7 +24,7 @@ If you want to change the UID and GID of the running user you can use the `user_
 
 #### Extra sheepit parameters
 
-You can pass additional parameters to sheepit such as for example `-verbose` with the help of the `extra_opt` environment variable like so `-e extra_opt="--verbose"`.
+You can pass additional parameters to sheepit such as for example `-verbose` with the help of the `extra_arg` environment variable like so `-e extra_opt="--verbose"`.
 
 ## Extra bits
 [Docker Hub page](https://hub.docker.com/r/agsphoenix/sheepit-docker/)  
