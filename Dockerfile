@@ -49,5 +49,6 @@ ENV user_password ""
 ENV cpu "0"
 ENV user_UID "1000"
 ENV user_GID "1000"
+ENV extra_arg ""
 
 CMD ./initrenderer.sh

@@ -14,8 +14,17 @@ docker run -d \
  -e user_password=XXXXXX \
  agsphoenix/sheepit-docker:latest
 ```
+#### CPU
 
-You can also specify the `cpu` variable to override autodetection; like `-e cpu=4`.
+You can also specify the `cpu` variable to override cpu cores autodetection; like `-e cpu=4`.
+
+#### User and Group IDs
+
+If you want to change the UID and GID of the running user you can use the `user_UID` and `user_GID` environment variables respectivly.
+
+#### Extra sheepit parameters
+
+You can pass additional parameters to sheepit such as for example `-verbose` with the help of the `extra_arg` environment variable like so `-e extra_arg="--verbose"`.
 
 ## Extra bits
 [Docker Hub page](https://hub.docker.com/r/agsphoenix/sheepit-docker/)  
