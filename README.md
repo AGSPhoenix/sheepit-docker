@@ -16,7 +16,7 @@ docker run -d \
 ```
 #### CPU
 
-You can also specify the `cpu` variable to override cpu cores autodetection; like `-e cpu=4`.
+You can also specify the `cpu` variable to override autodetection of available CPU threads; like `-e cpu=4`.
 
 #### User and Group IDs
 
