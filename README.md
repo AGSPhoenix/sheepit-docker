@@ -30,5 +30,5 @@ You can pass additional parameters to sheepit such as for example `--verbose` wi
 [Docker Hub page](https://hub.docker.com/r/agsphoenix/sheepit-docker/)  
 [GitHub page](https://github.com/AGSPhoenix/sheepit-docker)
 
-[SheepIt client GitHub repo](https://github.com/laurent-clouet/sheepit-client)  
+[SheepIt GitLab repo](https://gitlab.com/sheepitrenderfarm)   
 [SheepIt site](https://www.sheepit-renderfarm.com/)
